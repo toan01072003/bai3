@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2> Câu 1: Bài tập về Iframe </h2>
+    <p>
+        <b> Yêu cầu: </b> Vào trang google map, tìm 1 địa điểm yêu thích và nhúng thẻ iframe của google map vào website.
+        Để hiển thị được như sau:
+    </p>
+    <p>
+        <b> Lưu ý: </b> Thử tự lên google tìm hiểu cách nhúng bản đồ vào website.
+    </p>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7460.39096502755!2d105.784608!3d20.783378!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1b0e8f22b7d5ae01!2zQ8O0bmcgVHkgVE5ISCBDw7RuZyBOZ2jhu4cgVsOgIEThu4tjaCBW4bulIERBQ0E!5e0!3m2!1svi!2sus!4v1676658758953!5m2!1svi!2sus"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <h2> Câu 2: Bài tập về form </h2>
+    <p>
+        <b>Yêu cầu: </b> Tạo form <b>đăng ký </b> như form bên dưới. Phải có cả thẻ form bọc bên ngoài. Khi click vào
+        thẻ label thì phải focus vào đúng ô input tương ứng với label đó. Các ô input phải yêu cầu nhập nội dung mới cho
+        Đăng ký
+    </p>
+
+    <form>
+        <label for="name "> Ho ten </label> <br>
+        <input name="ho_va_ten" id="name " placeholder="Vi du: levana" method="POST" autocomplete="on">
+        <br>
+        <label for="email "> Email: </label><br>
+        <input name="email" id="email " placeholder="Vi du: levana@gmail.com " type="email" autocomplete="on"
+            method="POST">
+        <br>
+        <label for="matkhau "> Mat Khau: </label><br>
+        <input name="matkhau" id="matkhau " type="passport" autocomplete="on" method="POST">
+
+        <br>
+        <input type="submit" value="Dang ki">
+    </form>
+
+    <p>
+        <b> Yêu cầu: </b> Tạo form <b> tìm kiếm </b> như dưới đây: (Phải có cả thẻ form bọc bên ngoài. Phải nhập nội
+        dung mới cho bấm Tìm kiếm.)
+    </p>
+    <form>
+        <label for="timkiem "> </label><br>
+        <input name="timkiem" id="timkiem " placeholder="Nhap noi dung tim kiem " type="text" autocomplete="on"
+            method="GET">
+        <input type="submit" value="Tim kiem">
+    </form>
+    <br>
+    <h2>
+        Câu 3: Bài tập để ôn lại kiến thức về form
+    </h2>
+    <p>
+        <b> Yêu cầu: </b> Vẽ lại các thẻ dưới đây:
+    </p>
+    <p><b>- Thẻ input: </b></p>
+    <p>Kieu text </p>
+    <form>
+        <label for="hoten">Kieu text: </label> <br>
+        <input placeholder="Nhap ho va ten" method="GET" id="hoten">
+
+    </form> <br>
+
+    <form>
+        <label for="">Kiểu email: </label> <br>
+        <input placeholder="Nhap email" method="GET" type="email">
+
+    </form><br>
+
+    <form>
+        <label for="">Kiểu password: </label> <br>
+        <input method="POST" type="password">
+
+    </form><br>
+
+    <form>
+        <label for="">Kiểu number: </label> <br>
+        <input method="POST" type="number" value="number">
+
+    </form><br>
+
+    <form>
+        <label for="">Kiểu date: </label> <br>
+        <input method="POST" type="date" value="date">
+
+    </form><br>
+
+    <form>
+        <label for="">Kiểu time: </label> <br>
+        <input method="POST" type="time" value="time">
+
+    </form><br>
+
+    <form>
+        <label for="">Kiểu file: </label> <br>
+        <input method="POST" type="file" value="file">
+
+    </form><br>
+
+    <form>
+        <label for="">Kiểu radio: </label> <br>
+        <input method="POST" type="radio" value="Nam" name="kequa">
+        <label for="">Nam </label> <br>
+
+        <input method="POST" type="radio" value="Nu" name="kequa">
+        <label for="">Nu</label> <br>
+
+
+        <input method="POST" type="radio" value="Khac" name="kequa">
+        <label for="">Khac </label> <br>
+    </form><br>
+
+    <form>
+        <label for="">Kiểu Range: <br>
+            Âm lượng (min=0 và max=100):
+        </label> <br>
+        <input method="POST" type="range" min="0" max="100" step="1">
+
+    </form><br>
+    <form>
+        <label for="">Kiểu color: </label> <br>
+        <input method="POST" type="color" value="color">
+
+    </form><br>
+    <p><b>Thẻ select </b></p>
+    <form>
+        <label for="">Chọn danh muc: </label> <br>
+        <select value="sanpham" size="1">
+            <option selected> Quần </option>
+            <option> Mũ </option>
+            <option> Khăn </option>
+            <option> Áo </option>
+        </select>
+
+    </form><br>
+    <p><b>- Thẻ textarea (có cols = 30 và rows = 10): </b></p>
+    <textarea cols="30" rows="10"> </textarea>
+</body>
+
+</html>
